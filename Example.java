@@ -1,5 +1,4 @@
 public class Example {
-
     private final static double PI = 3.141;
 
     public static void main(String[] args) {
