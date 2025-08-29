@@ -2,7 +2,7 @@ public class Example {
     private final static double PI = 3.141;
 
     public static void main(String[] args) {
-        // Declear floating point number called "myNumber"
+        // Declear double called "myNumber"
         double myNumber;
 
         /**
@@ -14,13 +14,24 @@ public class Example {
         // Print number in degrees
         System.out.println("Degrees: " + myNumber);
 
+        // Stores the number converted to radians
+        double myNumberInRad;
+
         /**
-         * Assignment Statement Convert number from degrees to radians
+         * Assignment expression Convert number from degrees to radians
         */
-        myNumber = toRad(myNumber);
+        myNumberInRad = toRad(myNumber);
 
         // Print number in degrees
-        System.out.println("Radians: " + myNumber);
+        System.out.println("Radians with method call: " + myNumberInRad);
+
+        /**
+         * Same as before just without method call
+        */
+        myNumberInRad = myNumber * PI / 180.0;
+
+        // Print number in degrees
+        System.out.println("Radians without method call: " + myNumberInRad);
     }
 
     /**

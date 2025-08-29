@@ -14,12 +14,12 @@ x = 10;
 ```
 
 # Assignment Expression
-An assignment expression is the value set to a variable. The expressions may contain mathematics operations and/or calls to functions.
+An assignment expression is the value set to a variable. The expressions may contain mathematical operations, variable values, constants, and/or calls to functions.
 An example is seen as following:
 ```
 final float PI = 3.141;
 float deg = 45.0f;
 
-// The "deg / (180.0f / PI)" is the expression
-float degAsRad = deg / (180.0f / PI);
+// The "deg * PI / 180.0" is the expression
+float degAsRad = deg * PI / 180.0;
 ```
